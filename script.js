@@ -1,8 +1,7 @@
-let box = document.getElementById("box");
+let box = document.querySelectorAll(".box");
 let slide1 = document.getElementById("slide-1");
 var height = document.body.clientHeight;
 var width = document.body.clientWidth;
-
 let moveBox = (event) => {
   let x, y;
   x = event.clientX;
@@ -10,14 +9,16 @@ let moveBox = (event) => {
   // console.log(x,y);
   // console.log(x/width, y/height);
 
-  box.style.left = x + "px";
-  box.style.top = y + "px";
-
-  box.style.objectPosition =
-    (x / width) * 100 + "% " + (y / height) * 100 + "%";
-  //   box.style.objectPosition =  -x + 'px ' + -y + 'px';
-  box.animate({
-    duration: "3s",
+  box.forEach(e => {    
+      e.style.left = x + "px";
+      e.style.top = y + "px";
+    
+      e.style.objectPosition =
+        (x / width) * 100 + "% " + (y / height) * 100 + "%";
+      //   e.style.objectPosition =  -x + 'px ' + -y + 'px';
+      e.animate({
+        duration: "3s",
+      });
   });
 };
 slide1.addEventListener("mousemove", moveBox);

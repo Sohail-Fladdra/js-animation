@@ -35,7 +35,7 @@ body {
   z-index: 2;
   text-shadow: 0 0 20px #1b1b1b;
 }
-.wrapper #box {
+.wrapper .box {
   width: 20vw;
   height: 25vw;
   -o-object-fit: none;
@@ -62,5 +62,8 @@ body {
   }
   .wrapper .desktop {
     display: none;
+  }
+  .wrapper .mobile {
+    display: inline-block;
   }
 }/*# sourceMappingURL=style.css.map */
