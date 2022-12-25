@@ -14,7 +14,7 @@ body {
 .wrapper {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/jungle.jpg");
+  background-image: url("../images/desktop/jungle.jpg");
   background-repeat: no-repeat;
   background-size: 250%;
   background-position: center;
@@ -48,4 +48,19 @@ body {
   transition: all 1s;
   -webkit-animation-timing-function: cubic-bezier(0.9, -0.41, 0.99, 2.11) !important;
           animation-timing-function: cubic-bezier(0.9, -0.41, 0.99, 2.11) !important;
+}
+.wrapper .mobile {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    background-image: url("../images/mobile/jungle.jpg");
+  }
+  .wrapper .title {
+    font-size: 1.5rem;
+  }
+  .wrapper .desktop {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
