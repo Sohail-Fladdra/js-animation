@@ -16,7 +16,7 @@ body {
   height: 100vh;
   background-image: url("../images/jungle.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 250%;
   background-position: center;
   position: relative;
   overflow: hidden;

@@ -32,7 +32,7 @@ zoomSlide = (e) => {
   let val = (top / height - startFrom) * 100;
   if (val >= 0) {
     console.log(val);
-    slide1.style.backgroundSize = `${val + 100}%`;
+    slide1.style.backgroundSize = `${val + 250}%`;
   }
 };
 window.addEventListener("scroll", zoomSlide);
