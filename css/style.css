@@ -6,6 +6,22 @@
   box-sizing: border-box;
 }
 
+*::-moz-selection {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px #1b1b1b;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+*::selection {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px #1b1b1b;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
 body {
   font-size: 1rem;
   width: 100%;
